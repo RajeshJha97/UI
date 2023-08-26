@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Color Flipper</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="flex justify-around bg-white pt-2 pb-4 shadow-2xl shadow-blue-100">
+      <section class="logo text-blue-600">Color Flipper</section>
+      <ul class="flex space-x-5">
+        <li
+          class="font-serif text-lg hover:text-blue-500 cursor-pointer duration-500">
+          <a href="index.html">Simple</a>
+        </li>
+        <li
+          class="font-serif text-lg hover:text-blue-500 cursor-pointer duration-500">
+          <a href="Hix.html">Hex</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Main section -->
+    <main class="flex flex-col space-y-12 items-center mt-56">
+      <!-- color code section -->
+      <section class="bg-black text-white p-2 text-6xl rounded-2xl font-mono">
+        Background Color : <span class="text-blue-400" id="color">#F1f5f8</span>
+      </section>
+      <!-- button -->
+      <button
+        class="pt-2 pb-2 pl-4 pr-4 rounded-xl border-black border hover:bg-black hover:text-white duration-500"
+        id="btn">
+        Click Me
+      </button>
+    </main>
+    <script src="hex.js"></script>
+  </body>
+</html>
